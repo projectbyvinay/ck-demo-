@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#8b5b38">
+<title>CK Resort — Restaurant</title>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <section class="page home" id="home">
+    <header class="topbar">
+      <div class="brand-mini">
+        <div class="script">CK Resort</div>
+        <div class="sub">RESTAURANT · DHARIYAWAD</div>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open information menu">☰</button>
+    </header>
+
+    <div class="quick-menu" id="quickMenu">
+      <button data-info="about">About Us</button>
+      <button data-info="contact">Contact Us</button>
+      <button data-info="booking">Book a Table</button>
+    </div>
+
+    <div class="hero">
+      <div class="ey">WELCOME TO YOUR TABLE</div>
+      <h1>A table full<br>of flavours.</h1>
+      <p>Choose a cuisine and discover a beautiful selection from our kitchen.</p>
+      <div class="message" id="message">Freshly prepared. Beautifully served.</div>
+      <div class="line"></div>
+    </div>
+
+    <section class="feature-section">
+      <div class="section-kicker">AT CK RESORT</div>
+      <div class="feature-wrap" id="featureWrap">
+        <div class="feature-track" id="featureTrack"></div>
+        <button class="feature-arrow prev" id="featurePrev">‹</button>
+        <button class="feature-arrow next" id="featureNext">›</button>
+        <div class="feature-dots" id="featureDots"></div>
+      </div>
+    </section>
+
+    <section class="cuisine-section">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">EXPLORE OUR KITCHEN</div>
+          <h2>Choose your cuisine</h2>
+        </div>
+        <span id="cuisineCount">01 / 06</span>
+      </div>
+
+      <div class="cuisine-wrap" id="cuisineWrap">
+        <div class="cuisine-track" id="cuisineTrack"></div>
+        <button class="cuisine-arrow prev" id="cuisinePrev">‹</button>
+        <button class="cuisine-arrow next" id="cuisineNext">›</button>
+        <div class="cuisine-dots" id="cuisineDots"></div>
+      </div>
+      <p class="swipe-note">← SWIPE OR DRAG TO EXPLORE →</p>
+    </section>
+
+    <section class="home-info" id="homeInfo">
+      <div class="info-card">
+        <span>ABOUT CK RESORT</span>
+        <h3>A relaxed table, warm hospitality.</h3>
+        <p>Enjoy Indian favourites, South Indian comfort food, Chinese wok dishes, Italian classics and desserts in one place.</p>
+      </div>
+      <div class="contact-grid">
+        <a href="tel:+910000000000">☎ <b>Contact Us</b><small>Call for enquiries</small></a>
+        <a href="#booking" id="bookingLink">▣ <b>Book a Table</b><small>Reserve your table</small></a>
+      </div>
+    </section>
+  </section>
+
+  <section class="page menu" id="menu">
+    <div class="mh">
+      <button class="back" id="back">‹</button>
+      <div class="mt"><b id="mtitle"></b><small>OUR KITCHEN · YOUR CHOICE</small></div>
+      <span class="cnt" id="cnt"></span>
+    </div>
+    <div class="filters" id="filters">
+      <button class="pill on" data-filter="All">All</button>
+      <button class="pill" data-filter="Starters">Starters</button>
+      <button class="pill" data-filter="Main Course">Main Course</button>
+      <button class="pill" data-filter="Breads">Breads</button>
+      <button class="pill" data-filter="Drinks">Drinks</button>
+    </div>
+    <div class="list" id="list"></div>
+  </section>
+
+  <section class="page slider" id="slider">
+    <div class="st">
+      <button class="sb" id="mb">‹</button>
+      <div class="title"><b id="ct"></b><small>SWIPE TO EXPLORE</small></div>
+      <button class="sb" id="heart">♡</button>
+    </div>
+    <div class="vp" id="vp">
+      <div class="track" id="track"></div>
+      <div class="dots" id="dots"></div>
+    </div>
+    <div class="info">
+      <div class="tag">VEGETARIAN</div>
+      <h1 id="dn"></h1>
+      <div class="hin" id="dh"></div>
+      <p id="dp"></p>
+      <div class="cost" id="pr"></div>
+      <div class="swipe">← SWIPE LEFT OR RIGHT →</div>
+    </div>
+    <div class="actions">
+      <button id="prev">‹</button>
+      <button class="main" id="waiter">CALL WAITER</button>
+      <button id="next">›</button>
+    </div>
+  </section>
+
+  <div class="toast" id="toast">Waiter has been notified ✓</div>
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button id="modalClose">×</button>
+      <div class="section-kicker" id="modalKicker">CK RESORT</div>
+      <h2 id="modalTitle">About Us</h2>
+      <p id="modalText"></p>
+      <a class="modal-call" href="tel:+910000000000">Call CK Resort</a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
